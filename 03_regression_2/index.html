@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TensorFlow.js：自動車のエンジン出力から燃費を予測</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+</head>
+
+<body>
+  <h1>自動車のエンジン出力から燃費を予測</h1>
+  <form>
+    <p>空欄で全入力に対して予測、数値を指定して個別入力に対して予測します。</p>
+    <label>エンジン出力：<input type="number" id="output_power" />&nbsp;kW</label>
+    <button type="button" id="predict" disabled>予測開始</button>
+  </form>
+  <hr />
+</body>
+<script src="script.js"></script>
+
+</html>
