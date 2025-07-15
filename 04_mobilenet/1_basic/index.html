@@ -1,0 +1,32 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <title>画像判定デモ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>画像判定デモ</h1>
+    <p><select id="photos" disabled>
+      <option value="default">どれか画像を選んでください</option>
+      <option value="image01">画像1</option>
+      <option value="image02">画像2</option>
+      <option value="image03">画像3</option>
+      <option value="image04">画像4</option>
+      <option value="image05">画像5</option>
+      <option value="image06">画像6</option>
+    </select></p>
+    <img id="img" crossorigin width="227" height="227" alt="ここに画像が表示されます。" />
+    <div id="result" style="display: none;">
+      <p>判定結果</p>
+      <ol>
+        <li><span id="result-class-1"></span>（確率：<span id="result-probability-1"></span>）</li>
+        <li><span id="result-class-2"></span>（確率：<span id="result-probability-2"></span>）</li>
+        <li><span id="result-class-3"></span>（確率：<span id="result-probability-3"></span>）</li>
+      </ol>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

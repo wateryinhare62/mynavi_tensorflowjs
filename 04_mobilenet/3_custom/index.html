@@ -1,0 +1,29 @@
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+  <title>カスタム画像判定デモ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>カスタム画像判定デモ</h1>
+  <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+  <div>
+    <button id="class-rock">クラス「Rock」として追加</button>
+    <button id="class-scissor">クラス「Scissor」として追加</button>
+    <button id="class-paper">クラス「Paper」として追加</button>
+  </div>
+  <div id="result" style="display: none;">
+    <p>判定結果</p>
+    <p>クラス：<span id="result-class"></span><br>
+      確率：<span id="result-probability"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
