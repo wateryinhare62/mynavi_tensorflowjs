@@ -1,0 +1,35 @@
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+  <title>kNN分類器によるカスタム画像認識</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>kNN分類器によるカスタム画像認識</h1>
+  <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+  <div>
+    <p><button id="class-rock">クラス「Rock」として追加</button>&nbsp;
+      <button id="clear-rock">クリア</button><br>
+      サンプル数：<span id="count-rock">0</span></p>
+    <p><button id="class-scissor">クラス「Scissor」として追加</button>&nbsp;
+      <button id="clear-scissor">クリア</button><br>
+      サンプル数：<span id="count-scissor">0</span></p>
+    <p><button id="class-paper">クラス「Paper」として追加</button>&nbsp;
+      <button id="clear-paper">クリア</button><br>
+      サンプル数：<span id="count-paper">0</span></p>
+  </div>
+  <div id="result" style="display: none;">
+    <p>判定結果</p>
+    <p>クラス：<span id="result-class"></span><br>
+      確率：<span id="result-probability"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
