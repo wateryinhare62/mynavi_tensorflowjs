@@ -37,10 +37,10 @@ for (const className of classNames) {
 const interval = setInterval(async () => {
   if (classifier.getNumClasses() > 0) {
     const img = await webcam.capture();
-    const activation = net.infer(img, 'conv_preds');
+    const activation = net.infer(img, true);
     const result = await classifier.predictClass(activation);
-    document.getElementById(`result-class`).innerText = result.label;
-    document.getElementById(`result-probability`).innerText = result.confidences[result.label].toFixed(4);
+    document.getElementById('result-class').innerText = result.label;
+    document.getElementById('result-probability').innerText = result.confidences[result.label].toFixed(4);
     resultElement.style.display = 'block';
     console.log(result);
     img.dispose();
