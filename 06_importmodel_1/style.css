@@ -1,0 +1,36 @@
+#canvas {
+    background-color: black;
+}
+
+div {
+    padding: 10px;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+
+table {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+th:first-child {
+    width: 60px;
+}
+
+th:last-child {
+    /* width: 20%; */
+}
+
+td:first-child, td:last-child {
+    text-align: center;
+}

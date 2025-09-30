@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>手書き数字認識</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>手書き数字認識</h1>
+    <div style="float: left; margin-right: 20px;">
+        <canvas id="canvas" width="240" height="240" style="display: block;"></canvas>
+        <div>
+            <button id="predict">予測</button>&nbsp;<button id="clear">クリア</button>
+        </div>
+    </div>
+    <div style="float: left;">
+      <h3>判定結果</h3>
+      <table>
+        <tr><th>数字</th><th>確率</th></tr>
+        <tr><td>0</td><td><span id="result-probability-0"></span></td></tr>
+        <tr><td>1</td><td><span id="result-probability-1"></span></td></tr>
+        <tr><td>2</td><td><span id="result-probability-2"></span></td></tr>
+        <tr><td>3</td><td><span id="result-probability-3"></span></td></tr>
+        <tr><td>4</td><td><span id="result-probability-4"></span></td></tr>
+        <tr><td>5</td><td><span id="result-probability-5"></span></td></tr>
+        <tr><td>6</td><td><span id="result-probability-6"></span></td></tr>
+        <tr><td>7</td><td><span id="result-probability-7"></span></td></tr>
+        <tr><td>8</td><td><span id="result-probability-8"></span></td></tr>
+        <tr><td>9</td><td><span id="result-probability-9"></span></td></tr>
+      </table>
+    </div>
+    <div style="clear: both;">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
