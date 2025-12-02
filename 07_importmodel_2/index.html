@@ -9,13 +9,15 @@
 
 <body>
     <h1>手書き数字認識</h1>
-    <div style="float: left; margin-right: 20px;">
-        <canvas id="canvas" width="240" height="240" style="display: block;"></canvas>
+    <!--<img id="image" src="number_5.png" width="240" height="240">-->
+    <div class="left">
+        <canvas id="image" width="240" height="240"></canvas>
         <div>
-            <button id="predict">予測</button>&nbsp;<button id="clear">クリア</button>
+            <button id="predict">予測</button>&nbsp;
+            <button id="clear">クリア</button>
         </div>
     </div>
-    <div style="float: left;">
+    <div class="right">
       <h3>判定結果</h3>
       <table>
         <tr><th>数字</th><th>確率</th></tr>
@@ -30,8 +32,8 @@
         <tr><td>8</td><td><span id="result-probability-8"></span></td></tr>
         <tr><td>9</td><td><span id="result-probability-9"></span></td></tr>
       </table>
-    </div>
-    <div style="clear: both;">
+    <!-- </div>
+    <div style="clear: both;"> -->
     </div>
     <script src="script.js"></script>
 </body>

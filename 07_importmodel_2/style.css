@@ -1,9 +1,19 @@
-#canvas {
+canvas {
+    display: block;
     background-color: black;
 }
 
 div {
     padding: 10px;
+}
+
+div.left {
+    float: left;
+    margin-right: 20px;
+}
+
+div.right {
+    float: left;
 }
 
 h3 {
